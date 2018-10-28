@@ -1,0 +1,30 @@
+package assignment6;
+
+import java.util.Scanner;
+
+public class Q2 {
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+		
+		
+		double[] array = new double[10];
+		System.out.println(array.length);
+		System.out.print("Enter ten numbers: ");
+		for (int i = 0; i < array.length; i++) {
+		}
+		double nums = in.nextDouble();
+		
+		
+//		
+		
+	}
+	
+//		public static int indexOfMin(double[] array) {
+			
+			 
+			
+			
+			
+	
+}

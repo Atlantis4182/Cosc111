@@ -7,7 +7,7 @@ public class Q2 {
 		
 		Scanner in = new Scanner(System.in);
 		
-		double[] index = new double	[10];
+		double[] index = new double	[2];
 		System.out.print("Enter ten numbers: ");
 		for (int i = 0; i < index.length; i++) {
 			index[i] = in.nextDouble();
@@ -25,10 +25,9 @@ public class Q2 {
 			int indexMin = 0;
 			for (int i = 0; i < array.length; i++) {
 				//nums= 3 5 2 7 4 11 5 2 23 17
-				if (array[i]< min ) {
+				if (array[i]> min ) 
 					indexMin = i;
 					min = array[i];
-				}
 			}
 			
 			

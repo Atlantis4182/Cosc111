@@ -12,8 +12,9 @@ public class Q2 {
 		for (int i = 0; i < index.length; i++) {
 			index[i] = in.nextDouble();
 		}
-
-		System.out.println("The index of min is "+ indexOfMin(index));
+		System.out.println(index[0]);
+		
+		System.out.println("The index of the smallest number is "+ indexOfMin(index));
 		
 		in.close();
 		
@@ -25,10 +26,9 @@ public class Q2 {
 			int indexMin = 0;
 			for (int i = 0; i < array.length; i++) {
 				//nums= 3 5 2 7 4 11 5 2 23 17
-				if (array[i]< min ) {
+				if (array[i]< min ) 
 					indexMin = i;
 					min = array[i];
-				}
 			}
 			
 			
