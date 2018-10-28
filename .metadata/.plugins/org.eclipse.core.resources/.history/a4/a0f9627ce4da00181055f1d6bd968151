@@ -30,6 +30,9 @@ public class Q2 {
 					min = array[i];
 				}
 			}
+			
+			
+			
 			return indexMin;
 		}
 }
