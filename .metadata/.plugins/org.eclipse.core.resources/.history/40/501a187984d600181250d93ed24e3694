@@ -1,0 +1,31 @@
+package ex6;
+
+public class Q1 {
+	public static void main(String[] args) {
+		
+	System.out.println("Celsius   Fahrenheit   | Fahrenheit   Celsius");
+	System.out.println("---------------------------------------------");
+	System.out.println(toFahrenheit(20));
+	toCelsius(50);
+		
+		
+	}
+	
+	public static double toFahrenheit(double celsius) {
+		
+		double fahrenheit = (9.0/5)*celsius + 32;
+		for (celsius = 20; celsius<30; celsius++) {
+			
+		}
+		
+		return fahrenheit;
+	}
+	
+	public static double toCelsius(double fahrenheit) {
+		
+		double celsius = (5.0/9)*(fahrenheit - 32);
+		
+		return celsius;
+	}
+	
+}

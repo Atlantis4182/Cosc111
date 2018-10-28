@@ -1,0 +1,19 @@
+package assignment5;
+
+public class Q2 {
+	public static void main(String[] args) {
+	
+		int number = 0;
+		int sum = 0;
+		for (number = 1; sum != number; number++) {
+			for (int x = 1; x < 10001; x++) {
+				if (number%x == 0) { 
+					sum = sum + x;				
+				}
+			}
+		}
+		if (sum == number && sum != number) {
+			System.out.println(sum);
+		}
+	}	
+}

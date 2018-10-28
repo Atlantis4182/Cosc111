@@ -1,0 +1,54 @@
+package ex5;
+
+import java.util.Scanner;
+
+public class Q3 {
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);		
+		
+		System.out.print("Enter a string: ");
+		String s = in.nextLine();
+	
+		char start = '\u0022';
+		System.out.print("The reversed string is " + start);
+		
+		int length = s.length() - 1;
+
+		while (length >= 0) {
+		char x = s.charAt(length);
+		length--;
+		
+		System.out.print(x);
+		}
+		System.out.print(start);
+	}
+		// COUNTING VOWELS :
+//		int vowels = 0;
+//		
+//		while () {
+//			
+//			if () {
+//				
+//			} else if {
+//				
+//			} else if {
+//				
+//			} else if {
+//				
+//			} else {
+//				
+		}
+			
+			
+			
+			
+			
+			
+			
+		}
+		
+		
+		in.close();
+	}
+}

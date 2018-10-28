@@ -1,0 +1,61 @@
+package ex6;
+
+import java.util.Scanner;
+
+public class Worksheet2 {
+public static void main(String[] args) {
+	
+	Scanner in = new Scanner(System.in);
+	System.out.print("Enter a password: ");
+	String userPass = in.nextLine();
+	
+	
+	if(isValidPassword(userPass)) {
+		System.out.println("Valid");
+	} else {
+		System.out.println("Invalid");
+		}
+	
+	in.close();
+	}
+
+	public static boolean isValidPassword(String s) {
+		
+		boolean password = false;
+		String abc = "abcdefghijklmnopqrstuvwxyz";
+		String num = "0123456789";
+		int passIndexABC = 0; //1
+		int passIndexNUM = 0;
+		int passLength = 0; //1
+		int passNumberLength = 0;
+		
+		for(int i=0, r=0; passIndexABC < s.length() && passIndexNUM < s.length(); i++,r++) {
+			if(s.toLowerCase().charAt(passIndexABC) == abc.charAt((i))){
+				passIndexABC++;
+				passLength++;
+				i = 0;
+			} else if (i== 25) {
+				passIndexABC++;
+				i=0;
+			}
+			if(s.charAt(passIndexNUM) == num.charAt(r)){
+					passIndexNUM++;
+					passLength++;
+					passNumberLength++;
+					r = 0;
+				} else if (r == 9) {
+					passIndexNUM++;
+					r=0;
+				}
+		}
+			System.out.println(passLength);
+			System.out.println(passNumberLength);
+			
+		if (passLength >= 8 && passNumberLength >=2) {
+			password = true;
+		}	
+		
+	return password;
+		
+	}
+}

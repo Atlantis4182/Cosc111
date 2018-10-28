@@ -1,0 +1,32 @@
+package ex6;
+
+import java.util.Scanner;
+
+public class Worksheet2 {
+public static void main(String[] args) {
+	
+	Scanner in = new Scanner(System.in);
+	String s = in.nextLine();
+	String abc = "abcdefghijklmnopqrstuvwxyz";
+	String num = "0123456789";
+	int passIndexNUM = 0;
+	int passLength = 0;
+	int passNumberLength = 0;
+	
+	for(int r = 0; passIndexNUM < s.length(); r++) {
+		if(s.charAt(passIndexNUM) == numb.charAt(r)){
+			passIndexNUM++;
+			passLength++;
+			passNumberLength++;
+			r = 0;
+		} else if (r == 10) {
+			passIndexNUM++;
+			r=0;
+		}
+	}
+	
+	System.out.println(passIndexNUM);
+	System.out.println(passLength);
+	System.out.println(passNumberLength);
+	
+}}

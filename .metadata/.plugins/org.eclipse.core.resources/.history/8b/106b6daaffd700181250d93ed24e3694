@@ -1,0 +1,10 @@
+package lec12;
+
+public class Ex5 {
+	public static void main(String[] args) {
+			
+		int x = 5;
+		
+		int[] values = {5,1,3,6,2};
+}
+}

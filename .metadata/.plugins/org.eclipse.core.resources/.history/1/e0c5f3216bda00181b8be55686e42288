@@ -1,0 +1,41 @@
+package assignment6;
+
+import java.util.Scanner;
+
+public class Q1 {
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+		
+		double avg;
+		int i = 0;
+		double sum = 0;
+		int[] array = new int[100];
+		
+		for (i = 0; i < array.length | array[i] != -1; i++) {
+			System.out.print("Enter a new score(-1 to end): ");
+			array[i] = in.nextInt();
+			if (array[i] != -1) 
+				sum += array[i];
+		}
+		
+		avg = sum/i;
+		
+		System.out.printf("Average: %f", avg);
+		System.out.printf("Total number of scores: %d", i);
+		
+		int counterAbove = 0;
+		int counterBelow = 0;
+		for (i = 0; i < array.length; i++) {
+			if (array[i] >= avg) {
+				counterAbove++;
+			} else if (array[i] < avg) 
+				counterBelow++;
+		}
+		
+		System.out.printf("Number of score above or equal to the average: %d",counterAbove);
+		System.out.printf("Number of score below the average: %d", counterBelow);
+		
+		in.close();
+	}
+}

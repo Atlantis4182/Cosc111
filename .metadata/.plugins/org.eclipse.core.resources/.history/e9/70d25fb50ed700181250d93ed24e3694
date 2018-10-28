@@ -1,0 +1,9 @@
+package ex6;
+
+public class Q4 {
+	public static void main(String[] args) {
+		String abc = "abcdefghijklmnopqrstuvwxyz";
+		System.out.println(abc.length());
+		System.out.println(abc.charAt(0));
+	}
+}
