@@ -1,0 +1,27 @@
+package lec14;
+
+public class Ex1 {
+	public static void main(String[] args) {
+	
+	int[] a = {1,2,3};
+	int[] b = {5,6,7};     // The value of B isn't technically "5,6,7", but an assiged memory location
+		
+	a=b; 				   // a's memory location equals to b, SOooooo...
+	a[0] = 9;			   // When you change something of a, b is changed since their memory location is the same
+						   // The elements of the original a ( 1,2,3) are deleted since nothing references or points to it
+	b[0] = 8;
+	
+	
+	System.out.print("A: ");
+	for (int i = 0; i < a.length; i++) {
+		System.out.print(a[i] + " ");
+	}
+	System.out.println();
+	System.out.print("B: ");
+	for (int i = 0; i < b.length; i++) {
+		System.out.print(b[i] + " ");
+	}
+		
+		
+	}
+}

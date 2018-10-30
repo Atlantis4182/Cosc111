@@ -1,0 +1,21 @@
+package lec14;
+
+import java.util.Arrays;
+
+public class Ex3 {
+	public static void main(String[] args) {
+		int[] x = {1,2,3,4,5};
+
+			for(int elem: x) {
+				elem++;
+				System.out.println(elem);
+			}
+			System.out.println(array2String(x));
+	}
+	
+	public static String array2String(int[] arr) {
+		String temp = "";
+		for(int item:arr) temp += item + " ";
+		return temp;
+	}
+}

@@ -35,12 +35,9 @@ public class Main {
 			
 			int numPlayers = game.askForInt("How many players?", 1, 3);
 			
-			//REQ3:	Modify the code below to ask for players' names and add them to the game in a for loop (up to numPlayers iterations).
-			String name = game.askForText("What is player 1 name?");
-			game.addPlayer(name);
-			
-			for(int i=2; i<(numPlayers+1);i++) {
-				name = game.askForText("What is player " + i + " name?");
+			//REQ3:	Modify the code below to ask for players' names and add them to the game in a for loop (up to numPlayers iterations)
+			for(int i=1; i<(numPlayers+1);i++) {
+				String name = game.askForText("What is player " + i + " name?");
 				game.addPlayer(name);
 			}
 			//END of REQ3
