@@ -73,7 +73,8 @@ public class Main {
 	
 			//Jean-Philippe! Not sure why this doesn't work. It works using standard in.nextLine() and sysout on a different page but it doesn't work here.
 			while (!(end.toLowerCase().equals("n") || end.toLowerCase().equals("y"))) {
-				 game.askForText("Invalid input. Play again?(Y/N)");
+				 end = game.askForText("Invalid input. Play again?(Y/N)");
+				 
 			}
 			
 			 if (end.toLowerCase().equals("n")) {
