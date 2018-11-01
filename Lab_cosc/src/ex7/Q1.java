@@ -20,9 +20,9 @@ public class Q1 {
 //		}
 		int counter= 0;
 		System.out.print("Enter a new score(-1 to end): ");
-		double ans = in.nextInt();
+		int ans = in.nextInt();
 		while(ans >=0) {
-			array[i] = (int)ans;          // array[0] = ans(1), array[1]
+			array[i] = ans;          // array[0] = ans(1), array[1]
 			counter++;
 			sum+=ans;
 			System.out.print("Enter a new score(-1 to end): ");

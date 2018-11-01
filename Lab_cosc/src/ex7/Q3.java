@@ -34,12 +34,9 @@ public class Q3 {
 	
 	public static double getMin(double[] array) {
 		
-		double minElement = array[0];
-		for (int i = 0; i < array.length; i++) {
-			if (array[i] < minElement) {
-				minElement = array[i];
-			}
-		}
+		int minElement = (int)array[indexOfMin(array)];		
+		
+
 		return minElement;
 	}
 	
