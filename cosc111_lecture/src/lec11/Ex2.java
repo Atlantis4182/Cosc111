@@ -15,7 +15,9 @@ public class Ex2 {
 			for(int c= 0; c< width; c++)
 			System.out.print(ch);
 		System.out.println();
+		
 		}
+		System.out.println("hello");
 		
 	}// end of printLine()
 	
