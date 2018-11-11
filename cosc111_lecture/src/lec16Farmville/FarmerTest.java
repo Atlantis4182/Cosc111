@@ -3,11 +3,13 @@ package lec16Farmville;
 public class FarmerTest {
 
 	public static void main(String[] args) {
-		Farmer f1 = new Farmer();
-		f1.name = "Mark";
-		f1.weight = 60.5;
-		f1.x = 5;
-		f1.y = 6;
+//		Farmer f1 = new Farmer();			// "Farmer()" called constructor --> special --> create ONCE
+//		f1.name = "Mark";
+//		f1.weight = 60.5;
+//		f1.x = 5;
+//		f1.y = 6;
+//		
+		Farmer f1= new Farmer("Mark", 60.5, 20, 10);
 	
 		Cow c1 = new Cow();
 		

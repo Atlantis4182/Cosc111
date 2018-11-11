@@ -6,6 +6,11 @@ public class Farmer {
 	double weight;
 	int x,y;            //location
 	
+	//contructors (special method)
+	Farmer(String name, double weight, int x, int y) {
+		
+	}
+	
 	//actions or behviour (methods)
 	public void moveRight() {x++;}
 	public void moveLeft() {x--;}
