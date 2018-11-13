@@ -22,7 +22,7 @@ public class Q1 {
 			array = new double[total];
 						
 			System.out.print(msg2);
-			for (int i = 0; i < array.length; i++) {
+			for (int i = 0; i < total; i++) {
 				num = in.nextDouble();
 				array[i]= num;
 			}
