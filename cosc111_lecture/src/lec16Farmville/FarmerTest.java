@@ -30,5 +30,11 @@ public class FarmerTest {
 //		f1.moveTo(6,7);
 //		f1.feed(c1);
 //		c1.sleep();
+	
+	
+	Cow c2 = new Cow("Bolt", 170);
+	System.out.println(c2);
+	c1.hunger = -50;
+	System.out.print(c1.toString());
 	}
 }

@@ -1,53 +1,49 @@
 package ex8;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Q3 {
 	public static void main(String[] args) {
+		int[][] m1 = { { 14, 11, 13, 12 },
+				       { 18, 15, 13, 13 }, 
+				       { 19, 16, 15, 17 } };
+
+		int[][] m2 = { { 54, 53, 51, 52 },
+				       { 51, 59, 52, 56 }, 
+				       { 53, 54, 52, 58 } };
+
+		System.out.println("First array:");
+		displayArray(m1);
+		System.out.println("Second array:");
+		displayArray(m2);
 		
-	String[][] table = { 
-	{"Alberta", "edmonton"},
-	{"British Columbia","victoria"},
-	{"Manitoba","winnipeg"},
-	{"New Brunswick","fredicton"},
-	{"Newfoundland and Labrador","st. john's"},
-	{"Nova Scotia","halifax"},
-	{"Ontario","toronto"},
-	{"Prince Edward Island","charlottetown"},
-	{"Quebec","quebec city"},
-	{"Saskatchewan","regina"}};
-	
-	int counter = counter(table);
-	
-	System.out.printf("you got %d questions right", counter);
-		
+		int[][] m3 = sortRows(m1);
+		System.out.println("First array after sorting each row");
+		displayArray(m3);
+		System.out.println("-----------------");
+		displayArray(m1);
 	}
 	
-	public static boolean isValid(String ansUser, String table[][]) {
-		boolean status = false;
+	public static int[][] sortRows(int[][] m) {
 		
-		for (int i = 0; i < table.length; i++) {
-			if(ansUser.toLowerCase().equals(table[i][1])) 
-				status = true;
-							
+		int[][] m3 = new int[m.length][m[0].length];
+			for (int r = 0; r < m3.length; r++) {
+				for (int c = 0; c < m3[0].length; c++) {
+					m3[r][c] = m[r][c];
+				}
+			}
+		
+		for(int r =0; r< m.length;r++) {
+			Arrays.sort(m3[r]);
 		}
-		return status;
+		return m3;
 	}
-	
-	public static int counter(String table[][]) {
-		
-		Scanner in = new Scanner(System.in);
-		int counter = 0;
-		String ans = "";
-		
-		for (int i = 0; i < table.length; i++) {
-			System.out.printf("What is the capital of %s? ",table[i][0]);
-			ans = in.nextLine();
-			if(isValid(ans,table)) 
-				counter++;
+
+	public static void displayArray(int[][] m) {
+		for (int r = 0; r < m.length; r++) {
+			for (int c = 0; c < m[r].length; c++)
+				System.out.print(m[r][c] + " ");
+			System.out.println();
 		}
-		
-		in.close();
-		return counter;
 	}
 }
