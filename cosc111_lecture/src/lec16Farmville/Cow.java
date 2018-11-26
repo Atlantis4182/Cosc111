@@ -8,27 +8,28 @@ public class Cow {
 	String say;
 	
 	
-	public void setHunger(int s) {
-		if (s<0)
-			System.out.println("Invalid number: ");
-		hunger = s;
-	}
+	
 	public Cow(){
 		hunger = 50;
 		nickname = "anonymous";
 		isFull = false;
 	}
-	public Cow(String nn, int s) {
-		nickname = nn;
-		if(s<0)
+	public Cow(String nameVar, int hungerVar) {
+		nickname = nameVar;
+		if(hungerVar<0)
 			System.out.println("Invalid entry.");
-		else if (s<100) {
-			hunger = s;
+		else if (hungerVar<100) {
+			hunger = hungerVar;
 			isFull= false;
-		} else if (s>= 100) {
+		} else if (hungerVar>= 100) {
 			hunger = 100;
 			isFull = true;
 		}
+	}
+	public void setHunger(int s) {
+		if (s<0)
+			System.out.println("Invalid number: ");
+		hunger = s;
 	}
 	public void eat(int amount) {
 		hunger += amount;

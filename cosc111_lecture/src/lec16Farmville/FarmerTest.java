@@ -34,7 +34,7 @@ public class FarmerTest {
 	
 	Cow c2 = new Cow("Bolt", 170);
 	System.out.println(c2);
-	c1.hunger = -50;
+	c2.setHunger(-50);
 	System.out.print(c1.toString());
 	}
 }
